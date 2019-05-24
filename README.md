@@ -1,68 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Create React Component
 
-## Available Scripts
+It creates a library for npm using Creat React App
 
-In the project directory, you can run:
+## How to use it
 
-### `npm start`
+Download or clone this repository, then build your component!
+```
+git clone https://github.com/wviveiro/create-react-component.git my-component
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+cd my-component
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+npm install
 
-### `npm test`
+npm start
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tips to build your own component:
 
-### `npm run build`
+1. **Javascript/React code:** All the code present in the folder `src/lib` will be compiled and added to the folder `dist`.<br />
+    Your `package.json` has been set with `dist/index.js` as main script.
+2. **Your scss files:** All css you need has to be present in the file `src/styles/index.scss`. You can import other scss files in this file if you want to split your code.<br />
+    The css will be compiled and added to the folder `dist/styles/index.css`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **The Playground:** the playgrond is used to test your component. the files `src/lib/index.jsx` and `src/styles/index.scss` are included in the playground, so you can test your component with `npm start`
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+4. **Building my component:** Start editing your `src/lib/index.jsx` and `src/styles/index.scss` to build your component! Once your finish, run `npm run build` to compile your component.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can publish this entire project. The **development** dependencies are ignored through `.gitignore` and `.npmignore`
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Happy hack!
