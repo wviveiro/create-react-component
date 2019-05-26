@@ -17,6 +17,7 @@ npm start
 
 ### Tips to build your own component:
 
+1. **package.json** DO NOT FORGET to change the name of your application on `package.json`
 1. **Javascript/React code:** All the code present in the folder `src/lib` will be compiled and added to the folder `dist`.<br />
     Your `package.json` has been set with `dist/index.js` as main script.
 2. **Your scss files:** All css you need has to be present in the file `src/styles/index.scss`. You can import other scss files in this file if you want to split your code.<br />
